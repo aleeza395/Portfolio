@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 5rem;
+  background-color: #1b263b;
+  border-bottom: 2px solid #284b63;
+  color: #e0e1dd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo a {
+  color: #e0e1dd;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8rem;
+}
+
+.nav-links a {
+  color: #e0e1dd;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: #00e5ff;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e0e1dd;
+}
+
+@media (max-width: 980px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #1b263b;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

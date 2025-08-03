@@ -16,7 +16,7 @@ const About = () => {
         <p>Other than Web Development, I also run a small business of paintings and handicrafted jewelery named Canvas.and.craft</p>
         <p>I’m currently seeking opportunities where I can grow as a developer and contribute to real-world projects.</p>
         </div>
-        <button><Link className='about-link' to='/Resume.pdf' target='_blank'>Check Resume</Link></button>
+        <button><Link className='about-link' to='/Resume (2).pdf' target='_blank'>Check Resume</Link></button>
     </div>
     <Footer />
    </>

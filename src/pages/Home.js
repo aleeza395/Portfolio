@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faPalette, faPlug } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import Projectcard from "../components/Projectcard";
 
@@ -74,13 +74,13 @@ const Home = () => {
         <div id="skills-box">
           <div className="skill-container">
             <div className="skill-divs">
-              <FontAwesomeIcon icon={faDatabase} className="icons" />
+              <FontAwesomeIcon icon={faPalette} className="icons" />
             </div>
             <p className="skills-title">Interactive design</p>
           </div>
           <div className="skill-container">
             <div className="skill-divs">
-              <FontAwesomeIcon icon={faDatabase} className="icons" />
+              <FontAwesomeIcon icon={faPlug} className="icons" />
             </div>
             <p className="skills-title">API Integration</p>
           </div>

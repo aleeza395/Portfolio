@@ -31,7 +31,7 @@ const Projects = () => {
             title="Writeup"
             imgLink='https://journalingapp-production.up.railway.app/'
             imgSrc="writeup.png"
-            description="A full-stack web application that allows users to sign up, log in, and manage personal content like journal entries, stories, and book lists. Built using Node.js, Express.js, EJS, and SQLite, it includes authentication, persistent data storage, and clean UI templating — with a strong focus on backend functionality."
+            description="A full-stack web application that allows users to sign up, log in, and manage personal content. Built using Node.js, Express.js, EJS, and SQLite — with a strong focus on backend functionality."
           />
           
         </div>
